@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB182AAC-A5A3-4011-B848-B80E3157BCB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IMS</RootNamespace>
+    <AssemblyName>IMS</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DBL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DBL\DBL\DBL\bin\Debug\DBL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssignmentSubDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignmentSubDetails.Designer.cs">
+      <DependentUpon>AssignmentSubDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAssignment.Designer.cs">
+      <DependentUpon>EditAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAssignment.Designer.cs">
+      <DependentUpon>AddAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddResult.Designer.cs">
+      <DependentUpon>AddResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSubject.Designer.cs">
+      <DependentUpon>EditSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBatch.Designer.cs">
+      <DependentUpon>EditBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBatch.Designer.cs">
+      <DependentUpon>AddBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCourse.Designer.cs">
+      <DependentUpon>EditCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCourse.Designer.cs">
+      <DependentUpon>CreateCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudent.Designer.cs">
+      <DependentUpon>EditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterStudent.Designer.cs">
+      <DependentUpon>RegisterStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerMainMenu.Designer.cs">
+      <DependentUpon>ManagerMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReactiveUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReactiveUser.Designer.cs">
+      <DependentUpon>ReactiveUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeactiveUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeactiveUser.Designer.cs">
+      <DependentUpon>DeactiveUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator Main menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator Main menu.Designer.cs">
+      <DependentUpon>Administrator Main menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AssignmentSubDetails.resx">
+      <DependentUpon>AssignmentSubDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAssignment.resx">
+      <DependentUpon>EditAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAssignment.resx">
+      <DependentUpon>AddAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddResult.resx">
+      <DependentUpon>AddResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSubject.resx">
+      <DependentUpon>EditSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBatch.resx">
+      <DependentUpon>EditBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBatch.resx">
+      <DependentUpon>AddBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCourse.resx">
+      <DependentUpon>EditCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCourse.resx">
+      <DependentUpon>CreateCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudent.resx">
+      <DependentUpon>EditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterStudent.resx">
+      <DependentUpon>RegisterStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerMainMenu.resx">
+      <DependentUpon>ManagerMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactiveUser.resx">
+      <DependentUpon>ReactiveUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeactiveUser.resx">
+      <DependentUpon>DeactiveUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator Main menu.resx">
+      <DependentUpon>Administrator Main menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\original_146870_kQ36QS1MSAitBIcfhTJ8m2NzN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\post-201195-1213888138.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\login-button-blue-hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\1916sd561.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\420041-light-blue-background-for-pc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Origional.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\NuwanaSchool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Button.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
